@@ -1,0 +1,10 @@
+
+<h5>There are <%= @contact.length %> contacts</h5>
+<ul>
+  <% @contact.each do |con|%>
+  <li><h4><b><%= con.first_name %> <b><%= con.last_name %> <b>(<%= con.email %>)</h4></li>
+  <li><p><a href="#">Edit</a> | <a href="#">Delete</a></p></li>
+  <% end %>
+</ul>
+
+<!-- Crm.create(first_name: "Marty", last_name: "McFly", email: "(marty@mcfly.com)") -->
